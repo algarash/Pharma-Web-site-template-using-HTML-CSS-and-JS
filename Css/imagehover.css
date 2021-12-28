@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 400px;
+    height: 250px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #446454;
+    overflow: hidden;
+    width: 400px;
+    height: 0;
+    transition: .5s ease;
+    border-bottom-left-radius: 40px;
+  }
+  .container:hover .image {
+    opacity: 1;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.7;
+  }
+  .container:hover .overlay {
+
+    height: 100%;
+  }
+  
+  .text {
+    color: rgb(88, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+    background-color: #446454;
+    font-weight: bold;
+  }
+  .text:hover{
+    background-color: white;
+    border-radius: 30px;
+    color: #446454;
+  }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #446454;
+    overflow: hidden;
+    width: 400px;
+    height: 0;
+    transition: .5s ease;
+    border-bottom-left-radius: 40px;
+  }
+  .container:hover .overlay2 {
+    opacity: 0.7;
+  }
+  .container:hover .overlay2 {
+
+    height: 100%;
+  }

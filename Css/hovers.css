@@ -1,0 +1,40 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  a:hover{
+      color: navajowhite;
+  }
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -40px;
+    right: 15px;
+    background-color: navajowhite;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-in-out;
+  }
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .hover-underline-animation:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -40px;
+    left: 10px;
+    background-color:  navajowhite;
+    transform-origin: bottom left;
+    transition: transform 0.30s ease-in-out;
+  }
+  
+  .hover-underline-animation:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
